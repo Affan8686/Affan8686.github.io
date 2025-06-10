@@ -247,5 +247,15 @@
   <script src="./script.js"></script>
   <!-- Linking swiper script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Simple fix to prevent zoom on input focus
+    document.addEventListener('DOMContentLoaded', function() {
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        document.querySelectorAll('input, textarea').forEach(el => {
+          el.style.fontSize = '16px';
+        });
+      }
+    });
+</script>
 </body>
 </html>
