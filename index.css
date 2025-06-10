@@ -41,10 +41,14 @@ html, body {
 
   /* Site max width */
   --site-max-width: 1300px;
+}
 
+a, button {
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 /* Styling for whole site */
 ul {
