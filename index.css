@@ -588,4 +588,57 @@ header .navbar {
     height: 100px;
   }
 }
+/* Mobile Menu Fixes */
+@media (max-width: 900px) {
+  .hero-section {
+    padding-top: 70px; /* Adds space for fixed header */
+  }
+  
+  .navbar .nav-menu {
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .navbar .nav-link {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #menu-open-button {
+    z-index: 1001;
+    color: white;
+  }
+}
+
+/* Bigger tap targets */
+button, .button, a {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Form fixes */
+@media (max-width: 640px) {
+  .contact-form .form-input, 
+  .contact-form textarea {
+    width: 100% !important;
+    font-size: 16px; /* Prevents zoom on focus */
+  }
+  
+  textarea.form-input {
+    height: 120px !important;
+  }
+}
+
+/* Image containment */
+img, .gallery-image, .menu-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
  
